@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "ritwickdey.liveserver",
+        "esbenp.prettier-vscode"
+    ]
+}
