@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color1: #4d6fae;
+  --color1-transparent: #4d6faeaa;
+  --color2: #213761;
+  --color2-transparent: #213761aa;
+  --color3: #614a17;
+  --color4: #87affa;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(var(--color1) 2px, transparent 2px),
+    radial-gradient(var(--color1) 2px, #e5e5f7 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  color: white;
+  height: 100vh;
+}
+
+header,
+footer {
+  background-color: var(--color1-transparent);
+  padding: 0.5rem 5%;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  background-color: var(--color2-transparent);
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 1rem;
+  width: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+}
+
+table {
+  width: 100%;
+}
+
+table,
+table td,
+table th {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 0.2rem;
+}
+
+th {
+  background-color: var(--color3);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--color1);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--color2);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
